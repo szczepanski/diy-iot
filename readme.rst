@@ -26,6 +26,5 @@ stepper Motor and HAT setup
 
 |
 
-``python
-sudo apt-get update
-``
+.. code:: shell
+sudo apt-get updat
