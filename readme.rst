@@ -28,7 +28,7 @@ stepper Motor and HAT setup
 
 .. code:: python
 
-   # update and install python3.8 (looong)
+   # update and install python3.8 (duration:1 h)
    
    
    sudo apt-get update
@@ -41,3 +41,9 @@ stepper Motor and HAT setup
    sudo make altinstall
    echo "alias python=/usr/local/bin/python3.8" >> ~/.bashrc
    source ~/.bashrc
+   
+   #  Configuring I2C
+   
+   sudo apt-get install -y python-smbus
+   
+   sudo apt-get install -y i2c-tools
