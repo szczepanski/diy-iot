@@ -62,7 +62,7 @@ def open(steps):
     for i in range(steps):
         msg = 'move no {}'.format(i)
         print(msg)
-        kit.stepper1.onestep(direction=stepper.BACKWARD, style=stepper.DOUBLE)
+        kit.stepper1.onestep(direction=stepper.FORWARD, style=stepper.DOUBLE)
         time.sleep(0.01)
     kit.stepper1.release()
 
@@ -71,7 +71,7 @@ def close(steps):
     for i in range(steps):
         msg = 'move no {}'.format(i)
         print(msg)
-        kit.stepper1.onestep(direction=stepper.FORWARD, style=stepper.DOUBLE)
+        kit.stepper1.onestep(direction=stepper.BACKWARD, style=stepper.DOUBLE)
         time.sleep(0.01)
     kit.stepper1.release()
     
@@ -81,11 +81,11 @@ def main():
     # test1()
     # test2()
     
-    open(200)
+    open(100)
     
     time.sleep(2)
     
-    close(200)
+    close(100)
     
 
 if __name__ == "__main__":
