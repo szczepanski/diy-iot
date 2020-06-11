@@ -18,10 +18,18 @@ def test1():
     time.sleep(1)
     kit.stepper1.release()
 
+def test2():
+    kit = MotorKit()
+    for i in range(100):
+        kit.stepper1.onestep()
+        time.sleep(0.01)
+    kit.stepper1.release()
+
+
 
 def main():
     test1()
-
+    test2()
 
 if __name__ == "__main__":
     main()
