@@ -81,11 +81,11 @@ def main():
     # test1()
     # test2()
     
-    open(100)
+    open(800)
     
     time.sleep(2)
     
-    close(100)
+    close(800)
     
 
 if __name__ == "__main__":
