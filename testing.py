@@ -9,7 +9,7 @@ def test1():
     time.sleep(1)
     kit.stepper1.onestep()
     print('next step')
-    time.sleep(1)
+    time.sleep(2)
     kit.stepper1.onestep()
     print('release')
     time.sleep(1)
