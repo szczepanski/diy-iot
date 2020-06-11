@@ -56,11 +56,37 @@ def test2():
         kit.stepper1.onestep(direction=stepper.FORWARD, style=stepper.MICROSTEP)
         time.sleep(0.01)
     kit.stepper1.release()
+    
+def open(steps):
+    kit = MotorKit()
+    for i in range(steps):
+        msg = 'move no {}'.format(i)
+        print(msg)
+        kit.stepper1.onestep(direction=stepper.BACKWARD, style=stepper.DOUBLE)
+        time.sleep(0.01)
+    kit.stepper1.release()
+
+def close(steps):
+    kit = MotorKit()
+    for i in range(steps):
+        msg = 'move no {}'.format(i)
+        print(msg)
+        kit.stepper1.onestep(direction=stepper.FORWARD, style=stepper.DOUBLE)
+        time.sleep(0.01)
+    kit.stepper1.release()
+    
 
 
 def main():
-    #test1()
-    test2()
+    # test1()
+    # test2()
+    
+    open(200)
+    
+    time.sleep(2)
+    
+    close(200)
+    
 
 if __name__ == "__main__":
     main()
