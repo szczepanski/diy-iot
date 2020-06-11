@@ -20,7 +20,7 @@ def test1():
 
 def test2():
     kit = MotorKit()
-    for i in range(100):
+    for i in range(1000):
         kit.stepper1.onestep()
         time.sleep(0.01)
     kit.stepper1.release()
