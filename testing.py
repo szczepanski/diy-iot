@@ -34,7 +34,7 @@ def test2():
         msg = 'move no {}'.format(i)
         print(msg)
         kit.stepper1.onestep(direction=stepper.FORWARD, style=stepper.DOUBLE)
-#         time.sleep(0.01)
+        time.sleep(0.001)
     kit.stepper1.release()
     
     time.sleep(1)
@@ -50,7 +50,7 @@ def test2():
     time.sleep(1)
     
     for i in range(300):
-        # kit.stepper1.onestep()
+#         kit.stepper1.onestep()
         msg = 'move no {}'.format(i)
         print(msg)
         kit.stepper1.onestep(direction=stepper.FORWARD, style=stepper.MICROSTEP)
