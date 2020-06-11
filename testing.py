@@ -22,6 +22,7 @@ def test2():
     kit = MotorKit()
     for i in range(200):
         # kit.stepper1.onestep()
+        print('move ' %s) % i 
         kit.stepper1.onestep(direction=stepper.BACKWARD, style=stepper.DOUBLE)
         time.sleep(0.01)
     kit.stepper1.release()
