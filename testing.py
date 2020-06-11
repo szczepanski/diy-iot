@@ -34,7 +34,7 @@ def test2():
         msg = 'move no {}'.format(i)
         print(msg)
         kit.stepper1.onestep(direction=stepper.FORWARD, style=stepper.DOUBLE)
-        time.sleep(0.01)
+#         time.sleep(0.01)
     kit.stepper1.release()
     
     time.sleep(1)
