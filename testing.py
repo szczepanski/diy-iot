@@ -20,7 +20,7 @@ def test1():
 
 def test2():
     kit = MotorKit()
-    for i in range(600):
+    for i in range(300):
         # kit.stepper1.onestep()
         msg = 'move no {}'.format(i)
         print(msg)
@@ -29,14 +29,33 @@ def test2():
     
     time.sleep(1)
     
-    for i in range(600):
+    for i in range(300):
         # kit.stepper1.onestep()
         msg = 'move no {}'.format(i)
         print(msg)
         kit.stepper1.onestep(direction=stepper.FORWARD, style=stepper.DOUBLE)
         time.sleep(0.01)
     kit.stepper1.release()
+    
+    time.sleep(1)
+    
+    for i in range(300):
+        # kit.stepper1.onestep()
+        msg = 'move no {}'.format(i)
+        print(msg)
+        kit.stepper1.onestep(direction=stepper.FORWARD, style=stepper.INTERLEAVE)
+        time.sleep(0.01)
+    kit.stepper1.release()
 
+    time.sleep(1)
+    
+    for i in range(300):
+        # kit.stepper1.onestep()
+        msg = 'move no {}'.format(i)
+        print(msg)
+        kit.stepper1.onestep(direction=stepper.FORWARD, style=stepper.MICROSTEP)
+        time.sleep(0.01)
+    kit.stepper1.release()
 
 
 def main():
