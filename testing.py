@@ -49,7 +49,7 @@ def test2():
 
     time.sleep(1)
     
-    for i in range(300):
+    for i in range(3000):
 #         kit.stepper1.onestep()
         msg = 'move no {}'.format(i)
         print(msg)
