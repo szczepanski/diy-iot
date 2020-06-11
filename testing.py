@@ -63,7 +63,7 @@ def open(steps):
         msg = 'move no {}'.format(i)
         print(msg)
         kit.stepper1.onestep(direction=stepper.FORWARD, style=stepper.MICROSTEP)
-        time.sleep(0.01)
+#         time.sleep(0.01)
     kit.stepper1.release()
 
 def close(steps):
