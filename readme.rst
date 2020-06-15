@@ -21,8 +21,14 @@ contents
 |
 |
 
-stepper Motor and HAT setup
-===========================
+raspberry pi init setup
+=======================
+
+|
+
+wirless config 
+
+``sudo vi /etc/wpa_supplicant/wpa_supplicant.conf``
 
 |
 
