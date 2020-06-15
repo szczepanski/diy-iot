@@ -73,6 +73,9 @@ atmosphere pressure
 
 wind
 
+https://coral.ai/products/environmental/
+
+
 humidity
 
 light intesity sensors
