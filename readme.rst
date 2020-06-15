@@ -75,6 +75,8 @@ wind
 
 humidity
 
+light intesity sensors
+
 
 
 
