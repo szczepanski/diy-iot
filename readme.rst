@@ -47,3 +47,36 @@ stepper Motor and HAT setup
    sudo apt-get install -y python-smbus
    
    sudo apt-get install -y i2c-tools
+   
+
+components
+==========
+
+2 x proximity sensor -> water and feed measuring
+1 x camera - Pixy CMUCam-5 
+
+https://pixycam.com/
+
+
+camera -> tensor flow -> object detection / recognition -> Pixy CMUCam-5 
+
+mic1 -> tensor flow -> sound detection / recognition - inside
+
+mic2 -> tensor flow -> sound detection / recognition - outside
+
+
+temperature
+
+motion detection  -> number of entries
+
+atmosphere pressure
+
+wind
+
+humidity
+
+
+
+
+
+
